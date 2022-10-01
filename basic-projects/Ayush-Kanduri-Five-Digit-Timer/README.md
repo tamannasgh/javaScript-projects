@@ -48,9 +48,11 @@ For any issues related to the project, raise an ISSUE in the respective Reposito
 ## 💻 Screens
 
 <p align="justify">
+
 <video src="https://user-images.githubusercontent.com/76626529/193411443-2cba09bd-464d-46e2-af16-59ff29e67a75.mp4">
-<img src="https://user-images.githubusercontent.com/76626529/184519967-2c0af8af-b5cc-449c-98b8-0b504d3056ba.gif">
+
 </p>
+
 <br/>
 
 ## 🐦 Contributed By:
