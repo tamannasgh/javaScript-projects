@@ -1,0 +1,133 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ededed;
+  background-image: url("https://www.transparenttextures.com/patterns/cutcube.png");
+}
+
+header {
+  background-color: rgb(255 197 0);
+  height: 65px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+nav {
+  height: 100%;
+  padding: 0px 32px;
+}
+
+.h-1 {
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  font-size: 32px;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  height: 2.5rem;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+footer div {
+  color: #c4c4c4;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h2 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  background: #f5ba13;
+  color: rgb(72, 71, 71);
+  border-radius: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+/* Utilities */
+
+.flex {
+  display: flex;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
