@@ -3,12 +3,14 @@
 
 <br>
 
-### - [x] fork this repo.
-### - [x] clone it and code it!
+### fork this repo.
+### clone it and code it!
 
 <br>
 
 ********************
+
+
 
 ## Where to put your code?
 
@@ -20,4 +22,13 @@
 
 
 ## What next?
+
+- if you think something is missing raise an issue for that!
+
+- help others!
+
+- please share it on social media, on twitter tag me link is on my profile!
+
+
+# Thank You For Reading This Now Code!
 
