@@ -11,7 +11,7 @@
             inputval1 = document.getElementById("inputval").value;
 
 
-            fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + inputval1 + '&units=metric&appid=a3f77f5129a9ab2d7af83dbf11767865')
+            fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + inputval1 + '&units=metric&appid=#')
                 .then(response => response.json())
                 .then(character => {
                     // current
