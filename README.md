@@ -10,5 +10,5 @@
 
 <br>
 
-## Make sure to read [contribution guide](./CONTRIBUTING.md) and All The Best!!
+## Make sure to read [contribution guide](./CONTRIBUTING.md)!!
 
