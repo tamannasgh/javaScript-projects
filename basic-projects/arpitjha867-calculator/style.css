@@ -1,0 +1,52 @@
+
+.heading #head1{
+    text-align: center;
+}
+
+#calculatorBody{
+    border: 2px solid red;
+    background-color: black;
+    height: 550px;
+    width: 30%;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+
+#calculatorBtn{
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 10px;
+    height: 450px;
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+
+}
+#screen{
+    font-size: 35px;
+    margin-top: 5px;
+    margin:  auto;
+    border-radius: 10px;
+    display: block;
+    height: 100px;
+    width: 386px;
+    border: 2px solid black;
+}
+
+#buttons{
+    margin-top: 10px;
+    border-radius: 10px;
+    display: block;
+    height: 310px;
+    border: 2px solid black;
+    /* display: grid; */
+
+}
+
+.btn{
+    margin: 3px 3px;
+    width: 87px;
+    height: 53px;
+}
