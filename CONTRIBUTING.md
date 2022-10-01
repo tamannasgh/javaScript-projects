@@ -25,11 +25,13 @@
 
 ## What next?
 
+- if you have followed the instruction above i will merge your PR and label it with hacktoberfest!!✨🥳
+
 - if you think something is missing raise an issue for that!
 
 - help others!
 
-- please share it on social media, on twitter tag me link is on my profile!
+- please share it on social media, on twitter tag [me](https://twitter.com/__tanan__)!
 
 
 # Thank You For Reading This Now Code!
