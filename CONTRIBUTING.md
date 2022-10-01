@@ -20,6 +20,8 @@
 
 3. create a README.md in your project folder and describe about your project and add a short video if possible (you can use bandicam for that!)
 
+4. for reference [have a look](https://github.com/Tamanna-S/javaScript-projects/tree/main/basic-projects/clock)
+
 ********************
 
 
