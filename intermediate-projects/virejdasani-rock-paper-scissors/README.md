@@ -1,3 +1,3 @@
 # Play rock paper scissors with a bot!
 
-![](/screenshot.png)
+![](https://raw.githubusercontent.com/virejdasani/javaScript-projects/main/intermediate-projects/virejdasani-rock-paper-scissors/screenshot.png)
