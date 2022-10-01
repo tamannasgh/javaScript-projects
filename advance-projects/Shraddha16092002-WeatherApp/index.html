@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="template">
+        <h2 class="title">Weather </h2><img src="title-icon.png"
+            style="height: 43px; width:57px; margin-left: 7px;">
+        <div class="search">
+            <input type="text" id="inputval" placeholder="search location ...">
+            <button type="submit" onclick="clicked()"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="date-time">
+            <p id="da_ti"></p>
+        </div>
+        <div class="climate">
+            <div id="newtry">
+                <img src="https://cdn.pixabay.com/photo/2022/03/28/22/48/cloudy-7098479__480.png">
+                <p>Browse for your Weather location!</p>
+            </div>
+            <div class="icon-desc">
+                <div id="icon">
+
+                </div>
+                <div id="temp" class="font1">
+
+                </div>
+                <div id="desc" class="font1">
+
+                </div>
+            </div>
+            <div class="city-desc">
+                <div id="city-name">
+
+                </div>
+                <div class="details">
+                    <p id="humid"></p>
+                    <p id="wind"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 5 days forecast -->
+
+        <div class="forecast">
+            <div class="day1 common boright">
+                <div id="dayname1"></div>
+
+                <div id="icon1">
+
+                </div>
+                <div id="temp1">
+
+                </div>
+
+            </div>
+            <div class="day2 common boright">
+                <div id="dayname2"></div>
+
+                <div id="icon2">
+
+                </div>
+                <div id="temp2">
+
+                </div>
+
+            </div>
+            <div class="day3 common boright">
+                <div id="dayname3"></div>
+
+                <div id="icon3">
+
+                </div>
+                <div id="temp3">
+
+                </div>
+
+            </div>
+            <div class="day4 common boright">
+                <div id="dayname4"></div>
+
+                <div id="icon4">
+
+                </div>
+                <div id="temp4">
+
+                </div>
+
+            </div>
+            <div class="day5 common">
+                <div id="dayname5"></div>
+
+                <div id="icon5">
+
+                </div>
+                <div id="temp5">
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

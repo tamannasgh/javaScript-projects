@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lato:wght@300&family=Poppins:wght@300;400;500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+.template {
+
+    height: 603px;
+    width: 500px;
+    margin: auto;
+    margin-top: 52px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+body {
+    background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.3)0%,
+            rgba(0, 0, 0, 0.8)100%),
+        url("https://images.unsplash.com/photo-1659353916244-9cb4c0050158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.title {
+    margin-top: 12px;
+    /* text-align: center; */
+    display: inline-block;
+    margin-left: 182px;
+    font-family: 'Abril Fatface', cursive;
+
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search input {
+    height: 27px;
+    width: 377px;
+    border-radius: 23px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.search button {
+    height: 27px;
+    position: absolute;
+    right: 68px;
+    background-color: white;
+    background: transparent;
+    border: 0;
+
+}
+
+.date-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.48);
+}
+
+.climate {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    height: 257px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.icon-desc {
+    width: 142px;
+    /* background-color: #f7ff9e2b; */
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+
+}
+
+.city-desc {
+    width: 224px;
+    /* background-color: #faebd761; */
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.iconic {
+    height: 138px;
+}
+
+#temp {
+    padding: 10px;
+}
+
+#desc {
+    padding: 10px;
+
+}
+
+#city-name {
+    margin: 42px 7px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.details {
+    padding: 10px;
+    font-family: 'PT Serif', serif;
+}
+
+.font1 {
+    font-family: 'PT Serif', serif;
+
+}
+
+.forecast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    height: 160px;
+    margin: 30px 10px;
+}
+
+.common {
+    /* border: 2px solid black; */
+    height: 150px;
+    width: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT Serif', serif;
+
+
+}
+
+.boright {
+    border-right: 1px solid #00000017;
+}
+
+#newtry {
+    position: relative;
+}
+
+#newtry p {
+    position: absolute;
+    bottom: -94px;
+    font-weight: 700;
+    font-size: 32px;
+    left: 46px;
+    text-align: center;
+}
+
+#newtry img {
+
+    height: 312px;
+    width: 368px;
+    margin-left: 44px;
+}
