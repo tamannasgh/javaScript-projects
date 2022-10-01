@@ -1,4 +1,4 @@
-# 𝐅𝐢𝐯𝐞 𝐃𝐢𝐠𝐢𝐭 𝐂𝐨𝐮𝐧𝐭𝐞𝐫 🚀
+# 𝐅𝐢𝐯𝐞 𝐃𝐢𝐠𝐢𝐭 𝐓𝐢𝐦𝐞𝐫 🚀
 
 <br/>
 <p align="center">
@@ -7,7 +7,7 @@
 
 ## ⭐ Introduction
 
-This is a simple and interactive 5 Digit Counter. It is built using HTML, CSS, Javascript.
+This is a simple and interactive 5 Digit Timer. It is built using HTML, CSS, Javascript.
 
    <br/>
 
