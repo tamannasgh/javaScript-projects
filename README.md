@@ -1,2 +1,4 @@
-# javaScript-projects
-beginner, intermediate and advance javaScript projects!
+# javaScript-projects!!
+
+- beginner, intermediate and advance javaScript projects!
+
