@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainDiv {
+  /* background-color: yellow; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: rgb(56, 56, 56);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.divRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listItems {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.listItems a {
+  text-decoration: none;
+  color: white;
+}
+
+.divLeft h2 {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}

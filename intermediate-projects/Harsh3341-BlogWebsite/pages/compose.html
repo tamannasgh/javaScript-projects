@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/compose.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <nav class="navbar">
+        <div class="divLeft">
+          <h2>BLOGS</h2>
+        </div>
+
+        <div class="divRight">
+          <ul class="list">
+            <li class="listItems"><a href="home.html">Home</a></li>
+            <li class="listItems"><a href="about.html">About</a></li>
+            <li class="listItems"><a href="compose.html">Compose</a></li>
+            <li class="listItems"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="contentArea">
+        <div class="outerDiv">
+          <h1>Compose</h1>
+          <div class="formDiv">
+            <form action="/compose" method="post">
+              <div class="form-group">
+                <label>Title</label>
+                <input class="form-control" type="text" name="Compose_1" />
+                <label>Post</label>
+                <textarea
+                  class="form-control"
+                  name="Compose_2"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+              <button id="btn" type="submit">Publish</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
