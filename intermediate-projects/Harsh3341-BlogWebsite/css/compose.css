@@ -1,0 +1,88 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.contentArea {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.outerDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 50vh; */
+}
+
+.outerDiv h1 {
+  font-size: 30px;
+  color: rgb(56, 56, 56);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+}
+
+.formDiv {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.formDiv form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.form-group label {
+  font-size: 20px;
+  color: rgb(56, 56, 56);
+  margin: 10px;
+}
+
+.form-group input {
+  width: auto;
+  height: 40px;
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.form-group textarea {
+  width: auto;
+  height: 100px;
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.formDiv form button {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  font-size: 20px;
+}
+
+.formDiv form button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
