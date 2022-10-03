@@ -2,7 +2,7 @@
  
 <br/>
 <p align="center">
-  ![](https://github.com/theDreamer911/javaScript-projects/blob/main/basic-projects/simple-calculator/simple-calculator.gif)
+  <img src="https://github.com/theDreamer911/javaScript-projects/blob/main/basic-projects/simple-calculator/simple-calculator.gif">
 </p>
 
 ## ⭐ Introduction
