@@ -1,8 +1,8 @@
 # 𝐒𝐢𝐦𝐩𝐥𝐞 𝐓𝐨𝐝𝐨 𝐋𝐢𝐬𝐭 𝐀𝐩𝐩 🚀
- 
+
 <br/>
 <p align="center">
-<img src="https://user-images.githubusercontent.com/76626529/184528937-0423b5c8-4d39-4400-abeb-e61081f77a31.png">
+<img src="https://user-images.githubusercontent.com/76626529/193567595-f89512fe-25c8-410b-89d8-55bdce193376.gif">
 </p>
 
 ## ⭐ Introduction
@@ -57,7 +57,7 @@ For any issues related to the project, raise an ISSUE in the respective Reposito
 </p>
 <br/>
 
-## 🐦 Follow Me:
+## 🐦 Contributed By:
 
 > [Dev Community](https://dev.to/ayushkanduri)
 
