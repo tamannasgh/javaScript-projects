@@ -1,0 +1,42 @@
+/* --------------------------------590px-------------------------------- */
+@media only screen and (max-height: 590px) {
+	div.container {
+		min-height: 106vh;
+	}
+	div.app {
+		margin-top: 1%;
+	}
+}
+/* --------------------------------950px-------------------------------- */
+@media only screen and (max-width: 950px) {
+	.left {
+		left: 26%;
+		transition: all 0.5s ease;
+	}
+}
+/* --------------------------------720px-------------------------------- */
+@media only screen and (max-width: 720px) {
+	.left {
+		left: 20%;
+		transition: all 0.5s ease;
+	}
+}
+/* --------------------------------500px-------------------------------- */
+@media only screen and (max-width: 500px) {
+	.left {
+		left: 12%;
+		transition: all 0.5s ease;
+	}
+}
+/* --------------------------------390px-------------------------------- */
+@media only screen and (max-width: 500px) {
+	.editModal table label#text-label,
+	.editModal table label#textarea-label,
+	.editModal table label#date-label,
+	.editModal table label#priority-label,
+	.editModal table label#repeat-label {
+		font-size: 0.8rem;
+		padding-left: 4%;
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
+}
