@@ -1,0 +1,542 @@
+/* ----------------Google Fonts---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+/* ----------------General Styling---------------- */
+:root {
+	--bgcolor: #24c6dc;
+	--circle-color: #6be4e6;
+	--app-bgcolor: rgba(255, 255, 255, 0.3);
+	--text-color: white;
+}
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+}
+/* ----------------Body---------------- */
+body {
+	background-color: var(--bgcolor);
+}
+/* ----------------Container---------------- */
+div.container {
+	width: 100vw;
+	height: 100vh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+div.container ::-webkit-scrollbar {
+	display: none;
+	overflow: hidden;
+}
+/* ----------------Background Circles---------------- */
+div.circle {
+	width: 130px;
+	height: 130px;
+	min-width: 20px;
+	min-height: 20px;
+	border-radius: 10px;
+	position: absolute;
+	z-index: 0;
+	filter: blur(10px);
+	background-color: var(--circle-color);
+	box-shadow: 0px 0px 30px 30px var(--circle-color);
+}
+.left {
+	left: 33%;
+}
+.right {
+	left: 58%;
+}
+.top {
+	top: 5%;
+}
+.bottom {
+	top: 73%;
+}
+/* ----------------Application---------------- */
+div.app {
+	background: var(--app-bgcolor);
+	box-shadow: 0px 0px 10px 1px var(--app-bgcolor);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	border-radius: 20px;
+	border: 1px solid var(--app-bgcolor);
+	z-index: 2;
+	width: 27%;
+	max-width: 373.806px;
+	min-width: 307.806px;
+	height: 560px;
+	margin-top: 3%;
+	transition: all 0.2s linear;
+	overflow: hidden;
+}
+div.app:hover {
+	background: rgba(255, 255, 255, 0.27);
+}
+/* ----------------Application Banner---------------- */
+div.app > div.banner {
+	width: 100%;
+	height: 220px;
+	background-image: url("assets/images/banner.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	aspect-ratio: 16 / 9;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	position: relative;
+	overflow: hidden;
+}
+div.app > div.banner > div.hoverDisplay {
+	width: 100%;
+	height: -webkit-fill-available;
+	transition: all 0.45s linear;
+}
+div.app > div.banner:hover > div.hoverDisplay {
+	background-color: rgba(255, 255, 255, 0.13);
+}
+div.app > div.banner .hoverDisplay .fa-sun,
+div.app > div.banner .hoverDisplay .fa-moon {
+	font-size: 1.7rem;
+	position: absolute;
+	top: 7%;
+	left: 87%;
+	color: var(--text-color);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+	cursor: pointer;
+	display: none;
+}
+div.app > div.banner:hover > div.hoverDisplay .fa-sun,
+div.app > div.banner:hover > div.hoverDisplay .fa-moon {
+	animation: topToBottom 0.5s linear;
+	display: block;
+}
+#hide {
+	display: none;
+}
+div.app > div.banner .hoverDisplay #today,
+div.app > div.banner .hoverDisplay #name {
+	position: absolute;
+	top: 85%;
+	left: 4%;
+	font-size: 1.3rem;
+	color: var(--text-color);
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+	font-family: "Ubuntu", sans-serif;
+	word-spacing: 0.15rem;
+	display: none;
+}
+div.app > div.banner:hover > div.hoverDisplay #today {
+	animation: bottomToTop 0.5s linear;
+	display: block;
+}
+/* ----------------Animation---------------- */
+@keyframes bottomToTop {
+	0% {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	70% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+/* ----------------Hover Display---------------- */
+div.app > div.banner .hoverDisplay #name {
+	top: 5%;
+	font-size: 2rem;
+}
+div.app > div.banner:hover > div.hoverDisplay #name {
+	animation: topToBottom 0.5s linear;
+	display: block;
+}
+/* ----------------Animation---------------- */
+@keyframes topToBottom {
+	0% {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+/* ----------------Input Task Box Container---------------- */
+div.app div.inputBox {
+	width: 100%;
+	height: 40px;
+	display: flex;
+}
+div.app div.inputBox input {
+	width: 85%;
+	background: transparent;
+	outline: none;
+	border: 1px solid #ececec;
+	padding: 5px;
+	padding-left: 16px;
+	font-size: 1.2rem;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	height: 40px;
+	display: flex;
+	border: none;
+}
+div.app div.inputBox input:focus {
+	outline: none;
+}
+div.app div.inputBox input::placeholder {
+	color: var(--text-color);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	padding: 5px;
+	padding-left: 30px;
+	font-size: 1.15rem;
+	font-family: monospace;
+}
+div.app div.inputBox .submit {
+	width: 15%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #ececec;
+	border: none;
+}
+div.app div.inputBox .submit i {
+	font-size: 1.5rem;
+	color: #ededed;
+	transition: all 0.1s linear;
+}
+div.app div.inputBox .submit i:hover {
+	color: #55fca0;
+	cursor: pointer;
+}
+/* ----------------Tabs Container---------------- */
+div.tabs-box {
+	width: 100%;
+	height: 10px;
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: none;
+}
+div.tabs-box > div.tabs {
+	width: 33%;
+	padding: 5%;
+	height: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--text-color);
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 0.9rem;
+	transition: all 0.1s linear;
+}
+div.tabs-box > div.tabs:hover {
+	background: rgba(255, 255, 255, 0.2);
+	cursor: pointer;
+}
+div.tabs-box > div.tabs.active {
+	color: rgb(230, 230, 230);
+	cursor: initial;
+	background: rgba(0, 0, 0, 0.04);
+}
+/* ----------------Tabs Content Container---------------- */
+.content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+	margin-top: 6%;
+	overflow-y: scroll;
+	height: 200px;
+}
+.scroll {
+	overflow: hidden;
+}
+.content::-webkit-scrollbar {
+	display: none;
+	overflow: hidden;
+}
+/* ----------------Tab 1, Tab 2, Tab 3---------------- */
+.tab1 {
+	animation: fade 0.6s linear;
+}
+.tab2,
+.tab3 {
+	display: none;
+	animation: fade 0.6s linear;
+}
+/* ----------------Animation---------------- */
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/* ----------------Task Template---------------- */
+.task {
+	width: 100%;
+	height: fit-content;
+	/* display: flex; */
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.1s linear;
+}
+.task:hover {
+	background: rgba(0, 0, 0, 0.03);
+	cursor: pointer;
+}
+.task .checkbox,
+.task .edit,
+.task .delete {
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.1s linear;
+	cursor: pointer;
+	font-size: 1.1rem;
+	color: rgba(0, 0, 0, 0.7);
+}
+.task .checkbox:hover,
+.task .edit:hover {
+	color: #afffd3;
+}
+.task .delete:hover {
+	color: red;
+}
+.task .text {
+	width: 70%;
+	overflow: hidden;
+	/* word-break: break-all; */
+	font-size: 0.95rem;
+	font-weight: 900;
+	font-family: "Ubuntu", sans-serif;
+	word-spacing: 0.2rem;
+	letter-spacing: 0.001rem;
+	line-height: 1.3rem;
+	padding: 10px;
+	color: rgba(0, 0, 0, 0.75);
+}
+/* ----------------Line Through Class---------------- */
+.line-through {
+	text-decoration: line-through;
+	text-decoration-color: var(--text-color);
+	text-decoration-thickness: 2px;
+	-moz-text-decoration-color: var(--text-color);
+	-moz-text-decoration-thickness: 2px;
+}
+/* ----------------Delete Animation---------------- */
+.delete-animation {
+	transform: translateY(8rem) rotateZ(20deg);
+	opacity: 0;
+	transition: all 1s linear;
+}
+/* ----------------Lower Tabs---------------- */
+div.taskBar {
+	color: var(--text-color);
+}
+div.taskBar > div.tabs:hover {
+	background: none;
+	cursor: pointer;
+	color: rgb(230, 230, 230);
+}
+#taskCount:hover {
+	cursor: initial;
+	color: var(--text-color);
+}
+/* ----------------Footer---------------- */
+footer {
+	background: transparent;
+	color: var(--text-color);
+	font-size: 0.75rem;
+	text-align: center;
+	position: fixed;
+	padding: 1%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	word-spacing: 0.03rem;
+	letter-spacing: 0.1rem;
+	z-index: 1;
+	overflow: hidden;
+	animation: fade 1s linear;
+}
+footer strong {
+	color: red;
+}
+/* ----------------Edit Modal---------------- */
+.editModal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 27%;
+	max-width: 373.806px;
+	min-width: 307.806px;
+	height: fit-content;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+	z-index: 6;
+	padding: 2%;
+	display: block;
+	overflow: hidden;
+}
+.editModal table {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+	border: 1px solid #ececec;
+	overflow: hidden;
+}
+.editModal table input#time,
+.editModal table input#date {
+	margin-top: 5%;
+}
+.editModal table label#text-label,
+.editModal table label#textarea-label,
+.editModal table label#date-label,
+.editModal table label#priority-label,
+.editModal table label#repeat-label {
+	font-size: 1.3rem;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.editModal table input,
+.editModal table textarea {
+	margin-left: 5%;
+	outline: none;
+	border: none;
+	background: none;
+}
+.editModal table textarea {
+	margin-top: 5%;
+}
+.editModal table textarea,
+.editModal table input[type="text"] {
+	border-bottom: 1px solid black;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 1.1rem;
+	padding-left: 2%;
+	padding-bottom: 3%;
+	color: maroon;
+}
+.editModal table input:focus,
+.editModal table textarea:focus {
+	outline: none;
+}
+.editModal table fieldset#priority {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+	padding: 7%;
+	border: none;
+}
+.flex-row {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin-top: 3%;
+	width: 100%;
+}
+.editModal table fieldset#repeat {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+	padding: 7%;
+	border: none;
+	width: 100%;
+}
+/* ----------------Animation---------------- */
+@keyframes popIn {
+	0% {
+		transform: translate(-50%, -50%) scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes popOut {
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(0);
+		opacity: 0;
+	}
+}
+/* ----------------Modal Buttons---------------- */
+.editModal div#buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.editModal div#buttons button {
+	padding: 1.3em 3em;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: #000;
+	background-color: var(--text-color);
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+.editModal div#buttons button:hover {
+	background-color: #2ee59d;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: var(--text-color);
+	transform: translateY(-7px);
+}
+.editModal div#buttons button:active {
+	transform: translateY(-1px);
+}
+.editModal div#buttons button#cancel:hover {
+	background-color: #f75757;
+	box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+}
+/* ----------------Hide Class---------------- */
+.hide {
+	display: none;
+}
+/* ----------------Animation Classes---------------- */
+.popIn {
+	animation-name: popIn;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+}
+.popOut {
+	animation-name: popOut;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+}
