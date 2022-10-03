@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+</head>
+
+<body>
+    <section class="hero is-primary is-fullheight">
+
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="{{ url_for('update') }}" class="navbar-item" >
+                                Update
+                            </a>
+                            <a href="{{ url_for('profile') }}" class="navbar-item" >
+                                Profile
+                            </a>
+                            <a href="{{ url_for('successfull') }}" class="navbar-item">
+                                View
+                            </a>
+                            <a href="{{ url_for('index') }}" class="navbar-item">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+              <h1 class="title">
+                  The crimes at {{latitude}} and {{longitude}} are as follows
+              </h1>
+              <h2 class="subtitle">
+                {% for table in tables %}
+                            {{titles[loop.index]}}
+                            {{ table|safe }}
+                {% endfor %}
+              </h2>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
