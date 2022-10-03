@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo List App</title>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2376fafa%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2265%22>🚀</text></svg>"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="media-query.css" />
+		<script
+			src="https://kit.fontawesome.com/34162fcf4d.js"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="Task.js"></script>
+		<script defer src="Module.js"></script>
+		<script defer src="Script.js"></script>
+	</head>
+	<body>
+		<!-- Container Start -->
+		<div class="container">
+			<!-- Background Circles Start -->
+			<div class="circle left top" id="circle1"></div>
+			<div class="circle left bottom" id="circle2"></div>
+			<div class="circle right top" id="circle3"></div>
+			<div class="circle right bottom" id="circle4"></div>
+			<!-- Background Circles End -->
+			<!-- Application Start -->
+			<div class="app">
+				<!-- Banner Start -->
+				<div class="banner">
+					<div class="hoverDisplay">
+						<h3 id="name">Todo List App</h3>
+						<i class="fa-solid fa-sun"></i>
+						<i class="fa-solid fa-moon" id="hide"></i>
+						<h3 id="today">Monday, Oct 03</h3>
+					</div>
+				</div>
+				<!-- Banner End -->
+				<!-- Todo App Input Start -->
+				<div class="inputBox">
+					<input
+						type="text"
+						name="task"
+						id="task"
+						placeholder="Hi! What's the Task?"
+					/>
+					<div class="submit">
+						<i class="fa-solid fa-circle-check" id="taskSubmit"></i>
+					</div>
+				</div>
+				<!-- Todo App Input End -->
+				<!-- Upper Tabs Start -->
+				<div class="tabs-box">
+					<div class="tabs" id="all">All</div>
+					<div class="tabs" id="incomplete">Incomplete</div>
+					<div class="tabs" id="completed">Completed</div>
+				</div>
+				<!-- Upper Tabs End -->
+				<div class="scroll">
+					<!-- Tab Content Template Start -->
+					<div class="tab1 content">
+						<div class="task">
+							<div class="checkbox">
+								<i class="fa-solid fa-circle-check" id="check"></i>
+							</div>
+							<div class="text">
+								<p></p>
+							</div>
+							<div class="edit">
+								<i class="fa-solid fa-pen-to-square" id="edit"></i>
+							</div>
+							<div class="delete">
+								<i class="fa-solid fa-trash-alt" id="delete"></i>
+							</div>
+						</div>
+					</div>
+					<!-- Tab Content Template End -->
+					<!-- Tabs 2 3 Content Start -->
+					<div class="tab2 content"></div>
+					<div class="tab3 content"></div>
+					<!-- Tabs 2 3 Content End -->
+				</div>
+				<!-- Lower Tabs Start -->
+				<div class="taskBar tabs-box">
+					<div class="tabs" id="complete-all">Complete All Tasks</div>
+					<div class="tabs" id="taskCount">0 Tasks Left</div>
+					<div class="tabs" id="clear-completed">Clear Completed</div>
+				</div>
+				<!-- Lower Tabs End -->
+			</div>
+			<!-- Application End -->
+			<!-- Modal Start -->
+			<div class="editModal hide" id="modal">
+				<table>
+					<form action="">
+						<tr>
+							<!-- Title Start -->
+							<td>
+								<label for="" id="text-label">Title</label>
+							</td>
+							<td>
+								<input type="text" name="text" id="text" />
+							</td>
+							<!-- Title End -->
+						</tr>
+						<tr>
+							<!-- Description Start -->
+							<td>
+								<label for="" id="textarea-label">Description</label>
+							</td>
+							<td>
+								<textarea
+									name="textarea"
+									id="textarea"
+									cols="20"
+									rows="2"
+								></textarea>
+							</td>
+							<!-- Description End -->
+						</tr>
+						<tr>
+							<!-- Reminder Start -->
+							<td>
+								<label for="" id="date-label">Reminder</label>
+							</td>
+							<td>
+								<input type="date" name="date" id="date" /><br />
+								<input type="time" name="time" id="time" />
+							</td>
+							<!-- Reminder End -->
+						</tr>
+						<tr>
+							<!-- Priority Start -->
+							<td>
+								<label for="" id="priority-label">Priority</label>
+							</td>
+							<td>
+								<fieldset id="priority">
+									<div class="flex-row">
+										<label for="" id="low-label">Low</label>
+										<input
+											type="radio"
+											name="priority"
+											id="low"
+											value="low"
+											checked
+										/>
+									</div>
+									<div class="flex-row">
+										<label for="" id="medium-label">Medium</label>
+										<input
+											type="radio"
+											name="priority"
+											id="medium"
+											value="medium"
+										/>
+									</div>
+									<div class="flex-row">
+										<label for="" id="high-label">High</label>
+										<input
+											type="radio"
+											name="priority"
+											id="high"
+											value="high"
+										/>
+									</div>
+								</fieldset>
+							</td>
+							<!-- Priority End -->
+						</tr>
+						<tr>
+							<!-- Repeat Start -->
+							<td>
+								<label for="" id="repeat-label">Repeat</label>
+							</td>
+							<td>
+								<fieldset id="repeat">
+									<div class="flex-row">
+										<label for="" id="never-label">Never</label>
+										<input
+											type="radio"
+											name="repeat"
+											id="never"
+											value="never"
+											checked
+										/>
+									</div>
+									<div class="flex-row">
+										<label for="" id="day-label">Every Day</label>
+										<input
+											type="radio"
+											name="repeat"
+											id="day"
+											value="day"
+										/>
+									</div>
+									<div class="flex-row">
+										<label for="" id="week-label">Every Week</label>
+										<input
+											type="radio"
+											name="repeat"
+											id="week"
+											value="week"
+										/>
+									</div>
+									<div class="flex-row">
+										<label for="" id="month-label">Every Month</label>
+										<input
+											type="radio"
+											name="repeat"
+											id="month"
+											value="month"
+										/>
+									</div>
+									<div class="flex-row">
+										<label for="" id="year-label">Every Year</label>
+										<input
+											type="radio"
+											name="repeat"
+											id="year"
+											value="year"
+										/>
+									</div>
+								</fieldset>
+							</td>
+							<!-- Repeat End -->
+						</tr>
+					</form>
+				</table>
+				<!-- Modal Buttons Start -->
+				<div id="buttons">
+					<button id="cancel">Cancel</button>
+					<button id="save">Save</button>
+				</div>
+				<!-- Modal Buttons End -->
+			</div>
+			<!-- Modal End -->
+			<!-- Footer Start -->
+			<footer>
+				<p>
+					Made with <strong>&#10084;</strong> in <b>INDIA</b> by
+					<b>AYUSH KANDURI</b>
+				</p>
+			</footer>
+			<!-- Footer End -->
+		</div>
+		<!-- Container End -->
+	</body>
+</html>
