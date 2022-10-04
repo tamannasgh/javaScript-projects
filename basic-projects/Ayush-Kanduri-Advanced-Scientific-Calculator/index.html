@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Scientific Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body onmousedown="return false" onselectstart="return false">
+		<div id="calculator">
+			<div
+				id="display"
+				contenteditable="true"
+				onmousedown="return true"
+				onselectstart="return true"
+			>
+				<p></p>
+			</div>
+			<div id="operations">
+				<!-- 1st Row Start-->
+				<div class="row">
+					<button data-value="sqr" style="font-size: 1.6rem">
+						n<sup>2</sup>
+					</button>
+					<button class="c" data-value="clear">C</button>
+					<button data-value="+/-">+/-</button>
+					<button data-value="%" style="font-size: 1.7rem">%</button>
+					<button data-value="/" style="font-size: 2.5rem">÷</button>
+					<button data-value="abs" style="font-size: 1.7rem">| n |</button>
+				</div>
+				<!-- 1st Row End-->
+				<!-- 2nd Row Start-->
+				<div class="row">
+					<button data-value="fact" style="font-size: 1.7rem">n!</button>
+					<button data-value="7">7</button>
+					<button data-value="8">8</button>
+					<button data-value="9">9</button>
+					<button data-value="*">X</button>
+					<button
+						data-value="10-raised-to-power(n)"
+						style="font-size: 1.6rem"
+					>
+						10<sup class="super" style="font-size: 1.7rem">n</sup>
+					</button>
+				</div>
+				<!-- 2nd Row End-->
+				<!-- 3rd Row Start-->
+				<div class="row">
+					<button data-value="sqrt" style="font-size: 1.6rem">
+						<sup>2</sup>&#8730;n
+					</button>
+					<button data-value="4">4</button>
+					<button data-value="5">5</button>
+					<button data-value="6">6</button>
+					<button data-value="-" style="font-size: 2.5rem">-</button>
+					<button
+						data-value="n-raised-to-power(-1)"
+						style="font-size: 1.7rem"
+					>
+						<sup>1</sup>/n
+					</button>
+				</div>
+				<!-- 3rd Row End-->
+				<!-- 4th Row Start-->
+				<div class="row">
+					<button data-value="exponent" style="font-size: 1.6rem">
+						exp
+					</button>
+					<button data-value="1">1</button>
+					<button data-value="2">2</button>
+					<button data-value="3">3</button>
+					<button data-value="+" style="font-size: 2rem">+</button>
+					<button data-value="pi" style="font-size: 2rem">&#960;</button>
+				</div>
+				<!-- 4th Row End-->
+				<!-- 5th Row Start-->
+				<div class="row">
+					<button data-value="sin" style="font-size: 1.7rem">sin</button>
+					<button data-value="cos" style="font-size: 1.7rem">cos</button>
+					<button data-value="tan" style="font-size: 1.7rem">tan</button>
+					<button data-value="." style="font-size: 2.3rem">.</button>
+					<button data-value="cubert" style="font-size: 1.8rem">
+						<sup>3</sup>&#8730;n
+					</button>
+					<button data-value="cube" style="font-size: 1.8rem">
+						n<sup>3</sup>
+					</button>
+				</div>
+				<!-- 5th Row End-->
+				<!-- Last Row Start-->
+				<div class="row last">
+					<button
+						data-value="0"
+						style="
+							width: 35%;
+							border-bottom-left-radius: 20px;
+							font-size: 1.7rem;
+						"
+					>
+						0
+					</button>
+					<button data-value="=" style="font-size: 2rem; width: 30%">
+						=
+					</button>
+					<button data-value="ln" style="font-size: 1.8rem; width: 20%">
+						ln
+					</button>
+					<button
+						data-value="log"
+						style="
+							font-size: 1.7rem;
+							width: 15%;
+							border-bottom-right-radius: 20px;
+							letter-spacing: 0.001rem;
+							word-spacing: 0.01rem;
+						"
+					>
+						log<sub style="font-size: 0.45rem">10</sub>
+					</button>
+				</div>
+				<!-- Last Row End-->
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
