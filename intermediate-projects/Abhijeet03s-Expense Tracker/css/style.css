@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  /* background-color: #000 !important; */
+}
+
+section {
+  display: inline-block;
+  margin: 0rem 42rem;
+  font-size: large;
+  border-radius: 0.5rem;
+}
+
+.container {
+  margin: 1rem 7%;
+}
+
+h1 {
+  color: #fff;
+}
