@@ -1,0 +1,17 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "A pomodoro timer application built with JavaScript",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx browser-sync start -sw"
+  },
+  "keywords": [
+    "pomodoro",
+    "javascript"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}

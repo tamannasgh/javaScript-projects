@@ -3,6 +3,9 @@
 
 <br>
 
+## only vanilla javaScript projects please!!
+
+
 ### fork this repo.
 ### clone it and code it!
 
