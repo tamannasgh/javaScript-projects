@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+}
+div {
+  position: relative;
+  height: 10vh;
+}
+section {
+  width: 50%;
+  margin: 1vw auto;
+}
+section article {
+  border: 1px navy solid;
+  width: 80%;
+  margin: 1vh auto;
+  padding: 1px;
+}
+section article h2 {
+  width: 100%;
+  text-align: center;
+}
+section article p {
+  width: 80%;
+  margin: 1vh auto;
+  padding: 5px;
+}
+div button {
+  position: absolute;
+  background-color: black;
+  color: white;
+  text-align: left;
+  border: none;
+  font-size: 7vw;
+  transform: rotateZ(90deg);
+  border: 1px solid navy;
+}
+div button:nth-child(even) {
+  z-index: 100;
+  color: black;
+  background-color: white;
+  transform: rotateZ(-90deg);
+}
+div button:nth-child(odd) {
+  z-index: 10;
+}
+@media screen and (max-width: 600px) {
+  section {
+    width: 90%;
+    margin: 1vw auto;
+  }
+  section article {
+    border: 1px navy solid;
+    width: 90%;
+    margin: 1vh auto;
+    padding: 1px;
+  }
+  section article h2 {
+    width: 100%;
+    text-align: center;
+  }
+  section article p {
+    width: 90%;
+    margin: 1vh auto;
+    padding: 5px;
+  }
+}

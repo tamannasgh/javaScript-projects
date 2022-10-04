@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marcelotk15 - Password Genereator</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+  
+  <style>@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);</style>
+</head>
+
+<body>
+  <section class="grid w-full h-screen content-center bg-slate-900">
+    <div class="w-full max-w-[500px] mx-auto rounded-lg bg-slate-800 shadow p-5 text-gray-300">
+      <div class="relative mb-2">
+        <input
+          type="text"
+          id="password"
+          class="w-full pl-3 pr-10 py-2 border-2 rounded-md focus:outline-none transition-colors bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+          placeholder='Password Generated'
+          disabled
+        >
+
+        <button
+          class="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-gray-400 focus:outline-none hover:text-indigo-500 transition-colors"
+          onclick="App.handleCopyPassword()"
+        >
+          <i class="mdi mdi-content-copy"></i>
+        </button>
+      </div>
+
+      <hr class="my-5 border border-gray-200">
+
+      <div class="mb-2">
+        <label class="block text-xs font-semibold text-gray-500 mb-2">PASSWORD LENGTH</label>
+        
+        <input
+          class="w-full px-3 py-2 mb-1 border-2 rounded-md stransition-colors bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" 
+          placeholder="Length"
+          type="number"
+          min="6"
+          max="30"
+          step="1" />
+        
+        <input
+          class="w-full bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+          type="range"
+          min="6"
+          max="30" 
+          step="1" />
+      </div>
+
+      <div class='grid grid-cols-2'>
+        <div class='px-2'>
+          <label html='charsLower' class='flex items-start'>
+            <input
+              class='rounded focus:ring-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 ring-offset-gray-800'
+              id='charsLower'
+              type='checkbox'
+              checked
+              onchange="App.generatePassword()" />
+              
+            <span class='ml-2 text-sm font-medium'>LOWERCASE</span>
+          </label>
+        </div>
+
+        <div class='px-2'>
+          <label html='charsUpper'>
+            <input
+              type='checkbox'
+              class='rounded focus:ring-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 ring-offset-gray-800'
+              id='charsUpper'
+              checked
+              onchange="App.generatePassword()" />
+
+            <span class='ml-2 text-sm font-medium'>UPPERCASE</span>
+          </label>
+        </div>
+
+        <div class='px-2'>
+          <label html='charsNumeric'>
+            <input
+              type='checkbox'
+              class='rounded focus:ring-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 ring-offset-gray-800'
+              id='charsNumeric'
+              checked
+              onchange="App.generatePassword()" />
+
+            <span class='ml-2 text-sm font-medium'>NUMBERS</span>
+          </label>
+        </div>
+
+        <div class='px-2'>
+          <label html='charsSymbols'>
+            <input
+              type='checkbox'
+              class='rounded focus:ring-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 ring-offset-gray-800'
+              id='charsSymbols'
+              checked
+              onchange="App.generatePassword()" />
+
+            <span class='ml-2 text-sm font-medium'>SYMBOLS</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
