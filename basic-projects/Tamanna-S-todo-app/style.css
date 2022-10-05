@@ -8,6 +8,8 @@ body{
     padding: 2em;
     min-height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(./sky2.jpg);
+    background-blend-mode:soft-light;
 }
 
 .main{
