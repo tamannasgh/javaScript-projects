@@ -30,6 +30,15 @@ button.add{
     margin-left: 1em;
     box-shadow: 2px 2px 7px rgba(181, 175, 175, 0.8);
     border-radius: 5px;
+    transition: transform 0.2s;
+
+    
+}
+
+.add:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
 }
 
 ul.todo-list{
@@ -54,6 +63,17 @@ input[type="checkbox"]{
     margin-right: 1em;
 }
 
+input[type="checkbox"]:hover{
+    cursor: pointer;
+    
+}
+
 .delete{
     margin-left: auto;
+    transition: transform 0.2s;
+}
+
+.delete:hover{
+    cursor: pointer;
+   transform: scale(1.2);
 }
