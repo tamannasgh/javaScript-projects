@@ -19,7 +19,7 @@ body{
 input[type="text"]{
     border: 1px solid grey;
     padding: .5em 1em;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 1.3rem;
 }
 
