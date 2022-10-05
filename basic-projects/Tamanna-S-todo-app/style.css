@@ -8,6 +8,8 @@ body{
     padding: 2em;
     min-height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(./sky2.jpg);
+    background-blend-mode:soft-light;
 }
 
 .main{
@@ -19,26 +21,23 @@ body{
 input[type="text"]{
     border: 1px solid grey;
     padding: .5em 1em;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 1.3rem;
 }
 
 button.add{
     border: none;
-    padding: .5em 1em;
-    font-size: 1.3rem;
+    padding: 5px 13px;
+    font-size: 1.7rem;
     margin-left: 1em;
     box-shadow: 2px 2px 7px rgba(181, 175, 175, 0.8);
-    border-radius: 5px;
+    border-radius: 50%;
     transition: transform 0.2s;
-
-    
 }
 
 .add:hover{
     transform: scale(1.1);
     cursor: pointer;
-
 }
 
 ul.todo-list{
@@ -53,8 +52,12 @@ ul > li{
     padding: .5em 1em;
     font-size: 1.5rem;
     margin-bottom: 1em;
-    background-color: yellow;
+    background-color: rgb(222, 244, 248);
     border-radius: 7px;
+}
+
+.todo-list > *:hover{
+    background-color: rgb(203, 224, 231);
 }
 
 input[type="checkbox"]{
