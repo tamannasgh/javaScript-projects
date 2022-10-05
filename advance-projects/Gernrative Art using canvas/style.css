@@ -1,0 +1,31 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+#canvas
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:black;
+}
+
+
+.button
+{
+    position:absolute;
+    bottom:5%;
+    left:50%;
+    transform:translate(-50%,0);
+    border:none;
+    outline:none;
+    padding:15px;
+    width:250px;
+    font-size:1.5rem;
+    background:#25a32e;
+    color:white;
+}
