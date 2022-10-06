@@ -8,6 +8,7 @@ form.addEventListener("submit", (e) => {
     console.log(input.value);
     if(input.value.trim() === ""){
         console.log("please add a real todo");
+        input.value = "";
         return;
     }
 
