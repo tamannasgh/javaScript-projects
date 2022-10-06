@@ -30,6 +30,12 @@ body{
 }
 .options > *{
     margin: 1em;
+    transition: transform 0.3s;
+}
+
+.options >*:hover{
+    cursor: pointer;
+    transform:scale(1.2);
 }
 
 .scores{
@@ -54,7 +60,6 @@ body{
 .score{
     font-weight: bold;
 }
-
 
 
 
