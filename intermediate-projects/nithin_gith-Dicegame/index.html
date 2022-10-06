@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en">
+        <link rel ="stylesheet" href="styles.css">
+        <title>Virtual Dice</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Sacramento&family=Shippori+Antique&display=swap" rel="stylesheet">
+    </head>
+        
+
+    <body>
+        <h1 class = "heading">Virtual Dice</h1>
+        <div class="players-names">
+            <ul>
+                <li class="player-name"><input class="text-box"type="text" value="Enter Name" onclick="disappear(0)"></li>
+                <li class="player-name"><input class="text-box"type="text" value="Enter Name" onclick="disappear(1)"></li>
+            </ul>
+        </div>
+        <div class ="dice-images">
+            <img class ="dice-images" id="first-image" src = "Images/DIce-1.png" alt = "1">
+            <img class ="dice-images" id="second-image" src = "Images/DIce-1.png" alt = "2">
+        </div>
+        <h1 class="winner">Roll to Play</h1>
+        <button onclick="playAgain()" class="refresh">Roll</button>
+        <script src="js/myscript.js"></script>
+    </body>
+
+
+    <footer>
+        
+    </footer>
+</html>
