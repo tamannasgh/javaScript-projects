@@ -9,6 +9,8 @@ body{
     place-content: center;
     min-height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: teal;
+    color: whitesmoke;
 }
 
 /* .main{
@@ -28,6 +30,12 @@ body{
 }
 .options > *{
     margin: 1em;
+    transition: transform 0.3s;
+}
+
+.options >*:hover{
+    cursor: pointer;
+    transform:scale(1.2);
 }
 
 .scores{
@@ -44,6 +52,15 @@ body{
     font-size: 3rem;
     margin-top: 1em;
 }
+
+.option{
+    filter: drop-shadow( 1px 1px 5px rgba(0, 0, 0, 0.8));
+}
+
+.score{
+    font-weight: bold;
+}
+
 
 
 
