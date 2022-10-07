@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+}
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #9abbf4,
+    #c8a2f1,
+    #fe81c6,
+    #ff697a,
+    #f97712
+  );
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+.output {
+  top: 0;
+}
+
+h2,
+.output {
+  margin: 8px 0;
+}
+
+.allPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  background-image: linear-gradient(
+    to right top,
+    #f5b700,
+    #dc0073,
+    #ff697a,
+    #f97712
+  );
+  padding: 30px;
+  border-radius: 5px;
+}
+
+#myInput {
+  font-size: 1.2em;
+}
+
+textarea,
+input {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+}
+
+#buttons {
+  width: 100%;
+  background-color: #f5f3ff;
+  padding: 5px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+#buttons:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.title {
+  color: white;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+#reset {
+  width: 100%;
+  background-color: #f5f3ff;
+  padding: 5px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+#reset:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.teams {
+  background-image: linear-gradient(
+    to right top,
+    #f5b700,
+    #dc0073,
+    #ff697a,
+    #f97712
+  );
+  padding: 30px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+  transition: all 0.5s ease-out;
+}
+
+p {
+  margin: 15px;
+}
+
+#myInput {
+  color: #111;
+}
