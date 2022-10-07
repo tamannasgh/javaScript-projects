@@ -43,6 +43,15 @@ function userResult(userChoice, botChoice){
 
 const options = document.querySelector(".options");
 
+const userScore = document.querySelector(".user-score");
+const botScore = document.querySelector(".bot-score");
+
+const currentResults = document.querySelector(".current-results");
+
+const userChoiceDom = currentResults.children[0];
+const resultText = currentResults.children[1];
+const botChoiceDom = currentResults.children[2];
+
 options.addEventListener("click", (e) => {
     console.log(e.target);
 
@@ -57,21 +66,33 @@ options.addEventListener("click", (e) => {
     const result = userResult(userChoice, botChoice);
     console.log(result);
 
-    const userScore = document.querySelector(".user-score");
-    const botScore = document.querySelector(".bot-score");
-
     if(result === "You Win!"){
         userScore.textContent = +userScore.textContent + 1;
     } else if(result === "You Lost!"){
         botScore.textContent = +botScore.textContent + 1;
     } 
 
-    const userChoiceDom = document.querySelector(".user-choice");
-    const botChoiceDom = document.querySelector(".bot-choice");
-    const resultText = document.querySelector(".result");
 
     userChoiceDom.textContent = game[ place[userChoice] ].emoji;
     botChoiceDom.textContent = game[ place[botChoice] ].emoji;
     resultText.textContent = result;
     
 });
+
+const restart = document.querySelector(".restart");
+
+restart.addEventListener("click", (e) => {
+    userChoiceDom.textContent = "❓";
+    resultText.textContent = "result";
+    botChoiceDom.textContent = "❓";
+
+    if(+userScore.textContent === 0 && +botScore.textContent === 0) {alert("khel to lo!"); return};
+
+    let msg = +userScore.textContent > +botScore.textContent ? "win!" : +botScore.textContent > +userScore.textContent ? "lost!" : "draw!";
+    alert(msg);
+
+    userScore.textContent = 0;
+    botScore.textContent = 0;
+
+})
+
