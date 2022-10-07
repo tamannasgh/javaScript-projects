@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="allPage">
+      <div class="container">
+        <h2 class="title">Random Team Generator</h2>
+        <textarea
+          name=""
+          id="myInput"
+          cols="30"
+          rows="10"
+          placeholder="Put the name, split it with one comma and one white space (, )"
+        ></textarea
+        ><br />
+        <input type="number" placeholder="Group Amount" id="numberTeam" />
+        <br />
+        <button
+          type="button"
+          id="buttons"
+          onclick="getInputValue()"
+          value="Submit"
+        >
+          Shuffle
+        </button>
+      </div>
+      <div class="hidden teams">
+        <h2 class="hidden">Group List</h2>
+        <div id="output" class="output"></div>
+        <button id="reset" class="hidden">Restart</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
