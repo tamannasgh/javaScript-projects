@@ -71,6 +71,12 @@ body{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     background-color: rgb(222, 25, 25);
     color: whitesmoke;
+    transition: transform 0.3s;
+}
+
+.restart:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 
