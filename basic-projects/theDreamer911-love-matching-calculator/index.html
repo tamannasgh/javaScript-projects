@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Matching Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card w-50 m-auto text-center">
+            <div class="card-header bg-danger text-white">Love Matching Calculator</div>
+            <div class="card-body">
+                <form class="form-inline w-75 m-auto">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" id="name" class="form-control text-center">
+                    </div>
+                    <div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Love Name" id="lname" class="form-control text-center">
+                    </div>
+                </form> <br>
+                <div class="w-70 m-auto">
+                    <button class="btn btn-success w-50" onclick="checklover()"> Start </button>
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="" placeholder="Score" id="lovescore" class="form-control text-center w-25 m-auto">
+                </div>
+            </div>
+            <div class="card-footer">Happy Hacktoberfest2022</div>
+        </div>
+    </div>
+    <audio id="my_audio" src="music.mp3" loop="loop" autoplay"></audio>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
