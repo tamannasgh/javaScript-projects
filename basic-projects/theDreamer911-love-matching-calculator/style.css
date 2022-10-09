@@ -1,0 +1,51 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("https://images.pexels.com/photos/961402/pexels-photo-961402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.w-75 {
+    width: 52% !important;
+}
+
+.form-inline .form-control {
+    width: 17rem;
+}
+
+@media (max-width: 1200px) {
+    .form-inline .form-control {
+        width: 13.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .form-inline .form-control {
+        width: 9.7rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .form-inline .form-control {
+        width: 10rem;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .form-inline .form-control {
+        width: 7rem;
+    }
+}
