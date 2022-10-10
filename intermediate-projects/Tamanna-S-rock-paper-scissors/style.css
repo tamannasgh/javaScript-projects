@@ -79,7 +79,15 @@ body{
     transform: scale(1.2);
 }
 
-
+.red-text{
+    color: red;
+}
+.green-text{
+    color: rgb(20, 231, 20);
+}
+.yellow-text{
+    color: yellow;
+}
 
 
 
