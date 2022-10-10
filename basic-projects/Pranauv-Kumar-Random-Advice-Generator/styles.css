@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+/* font-family : 'ManRope',sans-serif */
+
+body{
+    background-color:hsl(218, 23%, 16%);
+    font-family: 'ManRope',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:35%;
+    height:40vh;
+    background-color:hsl(217, 19%, 24%);
+    position:relative;
+    top:28vh;
+    left:30%;
+    border-radius: 15px;
+    color:white;
+}
+
+#advice > h4{
+    position:relative;
+    bottom:20%;
+    text-align: center;
+}
+
+#advice{
+    position:relative;
+    bottom:5%;
+    height:100px;
+}
+
+#advice > p{
+    padding:0 5%;
+}
+
+p{
+    text-align: center;
+}
+
+/* #pause-icon{
+    position:relative;
+    top:12%;
+} */
+
+.icon{
+    position: relative;
+    top:12%;
+}
+
+#some{
+    width:50px;
+    height:50px;
+    background-color: hsl(150, 100%, 66%);
+    border:none;
+    border-radius: 50%;
+    position:relative;
+    top:30%;    
+}
+
+#some:hover{
+    box-shadow: hsl(150, 100%, 66%) 0px 5px 10px;
+}
+
+
+
+@media screen and (max-width:1500px)
+{
+    .icon{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #some{
+        position:relative;
+        top:35%;    
+    }
+}
+
+@media screen and (max-width:1000px)
+{
+    .icon{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #some{
+        position:relative;
+        top:36%;    
+    }
+}
+
+@media screen and (max-width:750px)
+{
+    .icon{
+        position: relative;
+        top:20%;
+    }
+    #advice > p{
+        padding:0;
+    }
+
+    #some{
+        position:relative;
+        top: 32%;    
+    }
+}
+
+@media screen and (max-width:673px)
+{
+    .icon{
+        position: relative;
+        top:20%;
+    }
+    #advice > p{
+        padding:0;
+    }
+
+    #some{
+        position:relative;
+        top:32%;    
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    .icon{
+        position: relative;
+        top:24%;
+        bottom:10%;
+    }
+    #advice{
+        position: relative;
+        bottom:15%;
+    }
+
+    #advice>h4{
+        position: relative;
+        bottom:5%;
+    }
+}
+
+
