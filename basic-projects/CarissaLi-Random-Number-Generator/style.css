@@ -1,0 +1,53 @@
+body {
+	background: black;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+h1 {
+	color: white;
+}
+
+button {
+	background: White;
+	border: 0px;
+	padding: 16px 36px;
+	color: black;
+	font-size: 26px;
+	border-radius: 10px;
+}
+button:hover {
+	cursor: pointer;
+	background: yellow;
+	color: black;
+}
+
+
+.container {
+	margin-top:  32px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.show-number {
+	width: 350px;
+	height: 150px;
+	border-bottom: 3px solid yellow;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	font-size: 64px;
+	position: relative;
+}
+.show-number:before {
+	content: '#';
+	color: yellow;
+	position: absolute;
+	left: 0;
+}
+	
+.show-number.done :before {
+	content: '';
+}
