@@ -6,6 +6,12 @@ const icon = searchInput.querySelector(".icon");
 let linkTag = searchInput.querySelector("a");
 let webLink;
 
+setInterval(() => {
+    if(!input.value){
+        searchInput.classList.remove("active"); //hide autocomplete box
+    }
+}, 1);
+
 // if user press any key and release
 input.onkeyup = (e)=>{
     let userData = e.target.value; //user enetered data
@@ -16,7 +22,7 @@ input.onkeyup = (e)=>{
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '94b93b7997mshf3ffdcdc7f382b5p129a80jsn945237b05595',
+                'X-RapidAPI-Key': `16fbaaa201mshf12890251626cb3p13d46fjsnb7600a2cab2d`,
                 'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
             }
         };
@@ -24,7 +30,6 @@ input.onkeyup = (e)=>{
         fetch('https://spotify23.p.rapidapi.com/search/?q='+userData+'&type=multi&offset=0&limit=10&numberOfTopResults=5', options)
             .then(response => response.json())
             .then(response => {
-                console.log(response);
                 suggestions_new = response.tracks.items
                 emptyArray = suggestions_new.map((track)=>{
                     id = track.data.id;
