@@ -8,6 +8,9 @@ It is a real-life implimentation of **backtracking algorithm**.
 
 2. Solve the sudoku by clicking on **Solve**.
 
+<h1 align=center> Here is how the project looks like:- 🤩</h1>
+<img src="https://user-images.githubusercontent.com/85815858/195492476-bd7d5f22-f270-49e2-b76f-d0750e23643b.png")</img>
+
 <h1 align=center> Project Admin ❤️ </h1>
 <p align="center">
 <table align="center">
