@@ -1,19 +1,16 @@
-
 # Contribution Guide!
 
 <br>
 
 ## only vanilla javaScript projects please!!
 
-
 ### fork this repo.
+
 ### clone it and code it!
 
 <br>
 
-********************
-
-
+---
 
 ## Where to put your code?
 
@@ -23,10 +20,9 @@
 
 3. create a README.md in your project folder and describe about your project and add a short video if possible (you can use bandicam for that!)
 
-4. for reference [have a look](https://github.com/Tamanna-S/javaScript-projects/tree/main/basic-projects/clock)
+4. for reference [have a look](https://github.com/Tamanna-S/javaScript-projects/tree/main/basic-projects/Tamanna-S-clock)
 
-********************
-
+---
 
 ## What next?
 
@@ -38,6 +34,4 @@
 
 - please share it on social media, on twitter tag [me](https://twitter.com/__tanan__)!
 
-
 # Thank You For Reading This Now Code!
-
