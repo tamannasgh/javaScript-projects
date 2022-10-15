@@ -1,4 +1,4 @@
-<img src="./images/gravity.png"></img>
+<img src="./images/gravity_img.png"></img>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
