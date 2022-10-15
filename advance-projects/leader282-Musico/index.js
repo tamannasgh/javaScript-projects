@@ -71,7 +71,7 @@ let getTrackUrl = (id) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '94b93b7997mshf3ffdcdc7f382b5p129a80jsn945237b05595',
+            'X-RapidAPI-Key': API_KEY,
             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         }
     };
