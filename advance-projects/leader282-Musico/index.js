@@ -22,7 +22,7 @@ input.onkeyup = (e)=>{
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': `16fbaaa201mshf12890251626cb3p13d46fjsnb7600a2cab2d`,
+                'X-RapidAPI-Key': API_KEY,
                 'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
             }
         };
