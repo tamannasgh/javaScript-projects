@@ -1,0 +1,188 @@
+body{
+    background-image: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+}
+
+#timer{
+    width: 5%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+#container{
+    /* display: none; */
+    height: auto;
+    width: 540px;
+    /* background-color: rgb(190, 104, 104); */
+    background-image: linear-gradient( 135deg, #FFF886 10%, #F072B6 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly ; 
+    margin: 0 auto;
+}
+
+.contents{
+    display: flex;
+    width: 80%;
+}
+
+#numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 10%;
+    font-size: 3rem;
+    justify-content: space-around;
+}
+
+.nums{
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+#generate-sudoku{
+    margin:auto;
+    display:block;;
+}
+
+
+#solve{
+    margin:auto;
+    display:block;;
+}
+
+#container div{
+    /* background-color: whitesmoke; */
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px; 
+    font-size: 30px; 
+    color: green;
+    
+}
+
+#container div:hover{
+    background-color: lightskyblue;
+}
+.lsb{   /* left side bar */
+    border-left: black 2px solid;
+}
+
+.bsb{  /* bottom side bar */
+    border-bottom: black 2px solid;
+}
+
+.rsb{  /* right side bar */
+    border-right: black 2px solid;
+}
+
+.tsb{  /* top side bar */
+    border-top: black 2px solid;
+}
+
+
+.ldb{  /* left dashed bar */
+    border-left: black 0.6px dashed;
+}
+
+.bdb{  /* bottom dashed bar */
+    border-bottom: black 0.6px dashed;
+}
+
+.rdb{  /* right dashed bar */
+    border-right: black 0.6px dashed;
+}
+
+.tdb{  /* top dashed bar */
+    border-top: black 0.6px dashed;
+}
+
+/*dark-mode */
+.dark-mode {
+    /* background-color: black; */
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+        color: red;
+
+  }
+
+
+.dark-mode #container div:hover{
+    background-color: rgb(6, 39, 59);
+}
+.dark-mode #sol div:hover{
+    background-color: rgb(6, 39, 59);
+}
+
+.dark-mode .lsb{   /* left side bar */
+    border-left: black 2px solid;
+}
+
+.dark-mode .bsb{  /* bottom side bar */
+    border-bottom: teal 2px solid;
+}
+
+.dark-mode .rsb{  /* right side bar */
+    border-right: teal 2px solid;
+}
+
+.dark-mode .tsb{  /* top side bar */
+    border-top: teal 2px solid;
+}
+
+
+.dark-mode .ldb{  /* left dashed bar */
+    border-left: teal 0.6px dashed;
+}
+
+.dark-mode .bdb{  /* bottom dashed bar */
+    border-bottom: teal 0.6px dashed;
+}
+
+.dark-mode .rdb{  /* right dashed bar */
+    border-right: teal 0.6px dashed;
+}
+
+.dark-mode .tdb{  /* top dashed bar */
+    border-top: teal 0.6px dashed;
+}  
+
+.dark-mode #container{
+    height: auto;
+    width: 540px;
+    background-color: rgb(183, 24, 24);
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly ; 
+    margin: 0 auto;
+}
+
+
+.dark-mode #container div{
+    background-image: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+            height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px; 
+    font-size: 30px; 
+    color: violet;
+    
+}
