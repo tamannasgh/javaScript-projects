@@ -4,7 +4,7 @@
 ## About The Project
 
 This project is an excellent gravity simulator that allows users to adjust the position of bodies in space along with their velocities and their masses
-and then once the start the simulation, the bodies are allowed to move freely under mutual gravitational force.
+and then once they start the simulation, the bodies are allowed to move freely under mutual gravitational force.
 
 <!-- BUILT USING -->
 ## Built using
