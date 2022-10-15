@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    background-image: url('./images/bg_2.webp');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading {
+    color: rgb(57, 35, 153);
+    text-decoration: underline;
+    text-align: center;
+    font-size: 70px;
+}
+
+.meta {
+    color: rgb(14, 189, 107);
+    text-align: center;
+}
+
+::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+  
+  .container{
+    max-width: 450px;
+    margin: 150px auto;
+  }
+  
+  .container .searchInput{
+    background: #fff;
+    max-width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  
+  .searchInput input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .searchInput.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .searchInput .resultBox{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    transition: ease-in-out 1s;
+  }
+  
+  .searchInput.active .resultBox{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    transition: ease-in-out 1s;
+  }
+  
+  .resultBox li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .searchInput.active .resultBox li{
+    display: block;
+  }
+  .resultBox li:hover{
+    background: #efefef;
+  }
+  
+  .searchInput .icon{
+    position: absolute;
+    right: -55px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+  }
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+img {
+    height: 20px;
+}
+
+img:hover {
+    height: 100px;
+}
