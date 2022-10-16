@@ -1,10 +1,5 @@
 # Gradient Generator 🚀
-
 <br/>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/76626529/193817586-eee998c5-dbef-4dc9-ba3f-a8cfe204d5bf.gif">
-</p>
-
 ## ⭐ Introduction
 
 This is a Gradient generator when you click a button it gives a new grdient combination
