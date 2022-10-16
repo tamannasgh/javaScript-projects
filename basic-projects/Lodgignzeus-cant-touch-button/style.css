@@ -1,0 +1,22 @@
+#btn{
+    position: absolute;
+    border: none;
+    top: 100px;
+    left: 100px;
+    background-color: rgba(79, 132, 230, 0.544);
+    height: 70px;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.container{
+    overflow: hidden;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(216, 246, 246);
+}
