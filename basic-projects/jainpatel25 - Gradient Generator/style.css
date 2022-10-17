@@ -1,0 +1,32 @@
+.btn {
+    border-radius: 30px;
+    background-color: rgba(238,238,238,0.5);
+    color: black;
+    padding: 30px;
+    text-align: center;
+    border-color: transparent;
+  }
+  .btn:hover{
+    background-color: rgba(238,238,238,0.3);
+    cursor: pointer;
+  }
+  .container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  .output {
+    border-radius: 5px;
+    background-color: rgba(238,238,238,0.5);
+    color: black;
+    font-family: Montserrat;
+    padding: 7px;
+    text-align: center;
+    border-color: transparent;
+  }
+  #gen-btn {
+    font-size: 30px;
+    margin-right: 20px;
+  }
