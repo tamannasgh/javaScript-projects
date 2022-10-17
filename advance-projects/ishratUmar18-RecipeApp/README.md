@@ -19,6 +19,6 @@ This small recipe app is perfect for users who are looking for delicious meal id
 - JavaScript
 - The Meal DB API to fetch data
 
-*Live Demo 👉🏻 [Recipe App](ishrat-recipe-app.netlify.app)* <br>
+Live Demo 👉🏻 [Recipe App](https://ishrat-recipe-app.netlify.app/) <br>
 
 Get in touch with me on [Twitter](https://twitter.com/ishratUmar18) :)
